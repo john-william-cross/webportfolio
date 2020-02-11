@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <title>John Cross Portfolio Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Giga&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="art.html">Art</a></li>
+            <li><a href="music.html">Music</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://github.com/john-william-cross" target="_blank">Take me to Your GitHub</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="section-1-background">
+        <div class="row">
+            <div class="col-4 leftSide-col">
+                <div>
+                    <h1 class="large">welcome!</h1>
+                </div>
+                <form>
+                    <div>
+                        <h3>Thank you for visiting. I'm learning all the time, so this site is always a work in progress.</h3>
+                        <h3>Please have a look around.</h3>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="footer">
+        <p>Photography, artwork, and music copyright &copy; 2020 John Cross. All rights reserved.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+        function dropdownMenu() {
+            var x = document.getElementById("dropdownClick");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+                /*change topnav to topnav.responsive*/
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body></html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <title>John Cross About</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Giga&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body class="aboutBody">
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="art.html">Art</a></li>
+            <li><a href="music.html">Music</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://github.com/john-william-cross" target="_blank">Take me to Your GitHub</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="section-1-background">
+        <div class="row">
+            <div class="col-3 leftSide-col">
+
+                <form>
+                    <div>
+                        <h3>I'm a teacher, an artist, a musician, and a coder who loves rock climbing so much that I'm moving to Las Vegas to do more of it!</h3>
+
+                        <h3>My ultimate career goal is enrich the lives of others by combining my passion for teaching with my love of coding.</h3>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <p>Photography, artwork, and music copyright &copy; 2020 John Cross. All rights reserved.</p>
+    </div>
+
+    <script>
+        function dropdownMenu() {
+            var x = document.getElementById("dropdownClick");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+                /*change topnav to topnav.responsive*/
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body></html>
